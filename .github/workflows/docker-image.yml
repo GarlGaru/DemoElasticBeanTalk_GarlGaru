@@ -1,4 +1,4 @@
-name: Auto delploy Docker
+name: Docker Image CI
 
 on:
   push:
