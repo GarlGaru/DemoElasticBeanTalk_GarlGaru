@@ -1,6 +1,20 @@
+server:
+  port: 8888
+
 spring:
-  profiles:
-    include: dev,local
-  #    active: dev
   application:
     name: demoElasticBeanTalk
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://alien.coffit.xyz:3306/coffitdb
+#    username: coffit
+#    password: coffit
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    #    hibernate:
+    #      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
